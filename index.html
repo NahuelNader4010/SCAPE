@@ -1,0 +1,196 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scape</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="Navbar">
+        <div class="container">
+            <div class="Logo">scape</div>
+
+            <div id="menu" class="menu">
+                <header class="inline">
+                    <div class="Logo">scape</div>
+                    <button id="closeMenuBtn" title="Cerrar Menú" aria-label="Cerrar Menú" class="NavButton">
+                        <i class="ri-close-line"></i>
+                    </button>
+                </header>
+
+                <a href="#" class="NavLink">Inicio</a>
+                <a href="#schedules" class="NavLink">Horarios</a>
+                <a href="#plans" class="NavLink">Planes</a>
+                <a href="#about" class="NavLink">Quiénes somos</a>
+            </div>
+
+            <button id="openMenuBtn" title="Abrir Menú" aria-label="Abrir Menú" class="NavButton">
+                <i class="ri-menu-line"></i>
+            </button>
+        </div>
+    </nav>
+    <main>
+        <section id="home">
+            <div class="hero">
+                <div class="visual">
+                    <picture>
+                        <source srcset="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/landing-page-with-scroll-driven/assets/images/hero.webp" type="image/avif" media="(width > 1024px)" />
+                        <source srcset="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/landing-page-with-scroll-driven/assets/images/hero-mobile.avif" type="image/avif" />
+                        <source srcset="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/landing-page-with-scroll-driven/assets/images/hero.webp" media="(width > 1024px)" type="image/webp" />
+                        <img src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/landing-page-with-scroll-driven/assets/images/hero-mobile.webp"
+                            alt="fitness" />
+                    </picture>
+                </div>
+
+                <div class="content">
+                    <h1>Buenos días</h1>
+                    <div class="wrapper">
+                        <a href="#discover" class="LinkButton Primary"> DESCUBRÍ MÁS </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="discover" class="fold">
+                <div class="subject">
+                    <p>
+                        Es un nuevo día,
+                        <span style="color: var(--brand-1)">una nueva oportunidad para esculpir la mejor versión de vos mismo.
+                            Aprovechá la energía,</span>
+                        sentí el esfuerzo y conquistá tus metas fitness con determinación inquebrantable.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedules" class="schedule">
+            <div class="subject">
+                <div class="container">
+                    <div class="table-wrapper">
+                        <h2>Horario Semanal</h2>
+                        <table>
+                            <tr>
+                                <th>Día</th>
+                                <th>Ejercicio Programado</th>
+                                <th>Hora</th>
+                            </tr>
+                            <tr>
+                                <td>Lunes</td>
+                                <td>Correr</td>
+                                <td>6:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Martes</td>
+                                <td>Natación</td>
+                                <td>7:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Miércoles</td>
+                                <td>Ciclismo</td>
+                                <td>6:30 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Jueves</td>
+                                <td>Yoga</td>
+                                <td>6:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Viernes</td>
+                                <td>Pesas</td>
+                                <td>8:00 AM</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="table-wrapper">
+                        <h2>Últimos 5 ejercicios</h2>
+                        <table>
+                            <tr>
+                                <th>Ejercicio</th>
+                                <th>Duración</th>
+                            </tr>
+                            <tr>
+                                <td>Correr</td>
+                                <td>30 min</td>
+                            </tr>
+                            <tr>
+                                <td>Natación</td>
+                                <td>45 min</td>
+                            </tr>
+                            <tr>
+                                <td>Ciclismo</td>
+                                <td>60 min</td>
+                            </tr>
+                            <tr>
+                                <td>Yoga</td>
+                                <td>40 min</td>
+                            </tr>
+                            <tr>
+                                <td>Pesas</td>
+                                <td>50 min</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="showcase">
+                <video autoplay loop muted
+                    poster="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/landing-page-with-scroll-driven/assets/images/poster.webp"
+                    role="none">
+                    <source
+                        src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/landing-page-with-scroll-driven/assets/demo.mp4"
+                        type="video/mp4" />
+                </video>
+                <img src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/landing-page-with-scroll-driven/assets/images/rhythm.png"
+                    alt="Ritmo" />
+            </div>
+        </section>
+
+        <section id="plans" class="cards">
+            <div class="subject">
+                <div class="container">
+                    <a href="#" class="Card">
+                        <i class="ri-trophy-line"></i>
+                        <div>
+                            <h2>Mejores Marcas</h2>
+                            <ul>
+                                <li>5K más rápido: 22 min</li>
+                                <li>Peso muerto más pesado: 250 lbs</li>
+                                <li>Plancha más larga: 3 min</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="#" class="Card">
+                        <i class="ri-flag-2-line"></i>
+                        <div>
+                            <h2>Desafíos</h2>
+                            <ul>
+                                <li>Racha de 30 días corriendo</li>
+                                <li>1000 flexiones en un mes</li>
+                                <li>Nadar 20 km en un mes</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="#" class="Card">
+                        <i class="ri-team-line"></i>
+                        <div>
+                            <h2>Actividad de Amigos</h2>
+                            <ul>
+                                <li>¡Nico acaba de lograr un nuevo récord en ciclismo: 30 millas!</li>
+                                <li>¡Nahue completó el desafío de 30 días corriendo!</li>
+                                <li>Coni compartió una nueva rutina: "Intervalos en subida".</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div id="target-word">amor</div>
+
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
